@@ -5,6 +5,6 @@ CREATE TABLE Shohin
     shohin_bunrui   VARCHAR(32)     NOT NULL,
     hanbai_tanka    INTEGER         ,
     shiire_tanka    INTEGER         ,
-    torokubi        DATABASE        ,
+    torokubi        DATE            ,
     PRIMARY KEY (shohin_id)
 );
