@@ -1,6 +1,6 @@
 CREATE TABLE Shohin
 (
-    shohin_id       CHARA(4)        NOT NULL,
+    shohin_id       CHAR(4)        NOT NULL,
     shohin_mei      VARCHAR(100)    NOT NULL,
     shohin_bunrui   VARCHAR(32)     NOT NULL,
     hanbai_tanka    INTEGER         ,
