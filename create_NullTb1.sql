@@ -1,0 +1,13 @@
+-- テーブル作成
+CREATE TABLE NullTb1
+(
+    col_1 VARCHAR(1) NULL
+);
+
+-- データ挿入
+INSERT INTO NullTb1 VALUES(NULL);
+INSERT INTO NullTb1 VALUES(NULL);
+INSERT INTO NullTb1 VALUES(NULL);
+
+-- データ登録
+COMMIT;
