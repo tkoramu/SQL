@@ -31,7 +31,23 @@
 
 - HAVING句を使用するときの順序
     > SELECT -> FROM -> WHERE -> GROUP BY -> HAVING
+
 - WHERE句とHAVING句の役割の違い
     > WHERE句=行に対する条件指定
     > HAVING句=グループに対する条件指定
     > 実行速度がWHERE句の方が早い
+
+- ORDER BY句は常にSELECT文の最後尾に書く、順番を指定しない場合は書かなくてもOK
+    > SELECT -> FROM -> WHERE -> GROUP BY -> HAVING -> ORDER BY
+
+- 昇順、降順
+    - 昇順：ASC(ascendent)
+    - 降順：DESC(zdescendent)
+
+- ソートキーにNULLが含まれていた場合、先頭か末尾にまとめられる
+
+- ORDER BY の実行順序
+    > FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY
+    > テーブルに存在する列であれば、SELECT句に含まれていない列でも指定できる
+
+- ORDER BY句では、列番号は使わない
