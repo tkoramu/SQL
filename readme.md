@@ -57,3 +57,9 @@
 - 原則として、INSERT文は1回の実行で1行を挿入すること
     > 複数行を挿入することもできるが、全てのRDBMSで利用できない。
     > 利用できるもの：DB2、SQL Server、PostgreSQL、MySQL
+
+- 他のテーブルからデータをコピーする
+    > INSERT…SELECT文を実行する
+
+- INSERT文内のSELECT文では、WHERE句やGROUP BY 句など、どんなSQL構文も使うことができる
+    > ただし、ORDER BY句は使っても効果がない。
