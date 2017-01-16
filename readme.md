@@ -71,8 +71,19 @@
 - テーブル内の全行を削除する方法
     > DELETE FROM テーブル名;
     > 標準以外に「TRUNCATE」というコマンドがあります。これは、DELETEよりも高速なのですが、Oracle SQL Server、PostgreSQL、MySQL、DB2しか持っていません。
-    > また、WHERE句も使用できません。加えて、Oracleでは暗黙的にCOMMITされるのでロールバックができないというデメリットもあります。
+    > また、WHERE句も使用できません。加えて、Oracleでは暗黙的にCOMMITされるので
 
 - 一部の行を削除する方法
     > WHERE句で対象行の条件を記述する
     > GROUP BY、HAVING、ORDER BYの3つの句は指定できない
+
+- 探索型UPDATE文
+    > WHERE句がない場合は全ての行を更新
+    > WHERE句を使用すると対象の行だけ更新
+
+- NNULLで更新する
+    > 列をNULLで更新することもできる
+    > UPDATE文で値をNULLクリアすることもできる(ただし、NOT NULL制約のついていない列に限る)
+
+- トランザクション
+    > 
