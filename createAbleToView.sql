@@ -13,3 +13,6 @@ SELECT * FROM ShohinJim;
 
 -- 元のテーブルに追加されていることの確認
 SELECT * FROM Shohin;
+
+-- 商品ID：0009の印鑑を削除する
+DELETE FROM Shohin WHERE shohin_id = '0009';
