@@ -6,6 +6,7 @@ CREATE TABLE SampleLike
 );
 
 -- DML:データ登録
+-- SQL Server, PostgreSQL
 -- BEGIN TRANSATION;
 
 -- MySQL
