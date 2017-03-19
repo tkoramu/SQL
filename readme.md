@@ -251,3 +251,23 @@
 - 内部結合：INNER JOIN
 - 外部結合：OUTER JOIN
 - クロス結合：CROSS JOIN
+
+
+#### ウィンドウ関数
+- SELECT句のみ使える
+- 別名「OLAP関数」
+- OLAP(OnLine Analytical Processing)
+> データベースを使ってリアルタイムに(=オンラインで)データ分析を行う処理のこと
+    <ウィンドウ関数> OVER ([PARTITION BY <列リスト>]
+                            ORDER BY <ソース用列リスト>)
+- RANK：レコードのランキングを算出する関数
+- DENSE_RANK：同じくランキングを算出しるが、同順位が複数レコード存在しても、後続の順位が飛びません
+> 1位が3レコードある場合：1位、1位、1位、2位…
+- ROW_NUMBER：一意な連番を付与します
+> 1位が3レコードある場合：1位、2位、3位、4位…
+- PARTITION BYによって区切られた部分集合を「ウィンドウ」と呼ぶ
+- 集計範囲をフレームと呼ぶ
+- GROUPING演算子：小計・合計を同時に求める
+> ROLLUP
+> CUBE
+> GROUPING SETS
